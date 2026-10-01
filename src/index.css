@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #080d1a;
+    --bg-panel: #0f172a;
+    --border-color: #1e293b;
+    --accent-cyan: #38bdf8;
+    --accent-blue: #0ea5e9;
+    --status-supported: #10b981;
+    --status-unsupported: #f43f5e;
+    --status-contradicted: #f59e0b;
+    --status-uncertain: #94a3b8;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: #f1f5f9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Glass panel research lab styling */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-subtle {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.45) 0%, rgba(15, 23, 42, 0.7) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Monospace font utilities */
+.font-mono-code {
+  font-family: 'Space Mono', 'JetBrains Mono', monospace;
+}
+
+/* Highlights for evidence */
+.highlight-supported {
+  background-color: rgba(16, 185, 129, 0.18);
+  border-bottom: 2px solid #10b981;
+  color: #a7f3d0;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.highlight-unsupported {
+  background-color: rgba(244, 63, 94, 0.2);
+  border-bottom: 2px solid #f43f5e;
+  color: #fecdd3;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.highlight-contradicted {
+  background-color: rgba(245, 158, 11, 0.2);
+  border-bottom: 2px solid #f59e0b;
+  color: #fde68a;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+::selection {
+  background: #0284c7;
+  color: #ffffff;
+}

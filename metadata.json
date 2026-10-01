@@ -1,0 +1,6 @@
+{
+  "name": "AI Hallucination Detection Benchmark",
+  "description": "Educational and interactive benchmark platform to detect, verify, and measure AI hallucinations through claim-level evidence decomposition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
